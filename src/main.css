@@ -9,20 +9,29 @@ body {
 header {
     display: flex;
     align-items: center;
+    background: hotpink;
 }
+
+th {
+    background-color: black;
+    color: #a3a3a3;
+}
+
+tr:nth-child(even) {
+    background-color: firebrick;
+
+}
+
+table {
+    width: 900px;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
 
 h1 {
     margin-left: 20px;
 }
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
