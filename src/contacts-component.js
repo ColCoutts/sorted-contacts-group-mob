@@ -14,10 +14,19 @@ export default function makeContactRow(contact){
         <td>${contact.email}</td>
         <td>${contact.favoriteFruit}</td>
     </tr>`
-
-    return html;
+    const template = document.createElement('template');
+    template.innerHTML = html;
+    return template.content;
 }
+
+
+
+const contactTable = document.getElementById('table-body-list');
 
 export function loadContacts(contacts) {
     console.log(contacts);
+    contacts.forEach(contact => {
+        const dom = makeContactRow(contact);
+        contactTable.appendChild(dom);
+    });
 }
