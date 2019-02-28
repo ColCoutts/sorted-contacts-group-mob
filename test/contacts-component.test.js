@@ -40,6 +40,6 @@ test('contact row template', function(assert) {
         <td>banana</td>
     </tr>`;
     //assert
-    assert.equal(result, expected);
+    assert.htmlEqual(result, expected);
 });
 
