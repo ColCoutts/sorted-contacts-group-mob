@@ -24,9 +24,15 @@ export default function makeContactRow(contact){
 const contactTable = document.getElementById('table-body-list');
 
 export function loadContacts(contacts) {
-    console.log(contacts);
+    clearRows();
     contacts.forEach(contact => {
         const dom = makeContactRow(contact);
         contactTable.appendChild(dom);
     });
+}
+
+function clearRows(){
+    while(contactTable.children.length > 0){
+        contactTable.lastElementChild.remove();
+    }
 }

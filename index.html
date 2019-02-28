@@ -12,6 +12,18 @@
         <h1>Sorted Contacts</h1>
     </header>
     <main>
+        <p>
+            <select id="sort-selection"> 
+                <option value="" disabled selected>Selecthing</option>
+                <option value="_id">ID </option>
+                <option value="isActive">Active</option>
+                <option value="balance">Balance</option>
+                <option value="age">Age</option>
+                <option value="firstName">First Name </option>
+                <option value="company">Company</option>
+                <option value="fruit">Fav Fruit</option>
+            </select>
+        </p>
         <table>
             <thead>
                 <tr>
@@ -24,7 +36,7 @@
                     <th>Last Name</th>
                     <th>Company</th>
                     <th>Email</th>
-                    <th>Fruit</th>
+                    <th>Fav Fruit</th>
                 </tr>
             </thead>
             <tbody id="table-body-list">

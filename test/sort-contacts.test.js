@@ -2,19 +2,7 @@ const test = QUnit.test;
 
 QUnit.module('test suite two');
 
-function sortContacts(contacts, sortChoice) {
-    const property = sortChoice.property;
-    contacts.sort((a, b) => {
-        if(a[property] === b[property]) {
-            return 0;
-        }
-        if(a[property] > b[property]) {
-            return 1;
-        }
-        return -1;
-    });
-    return contacts;
-}
+import sortContacts from '../src/sort-contacts.js';
 
 const contacts = [
     { firstName: 'Zelda', age: 1000 },
